@@ -1,6 +1,9 @@
 // এই পুরো ফাইলে কেও কোন কিছু পরিবর্তন করবেন না । এইখানে কোন Bug নেই ।
 
 // Handle Timer
+/* quizTimer
+quizTimer function used for count the duration 
+of the time how long take for giving the answers of the questions in the website */
 const quizTimer = (dismiss) => {
   if (dismiss) {
     clearInterval(timer);
@@ -46,6 +49,10 @@ const displayQuizOptions = (quiz, i) => {
 };
 
 // select or choose quiz
+
+/* chooseQuiz
+chooseQuiz function used for select the answer of the quiz and 
+it's also used for show the answer in the answer list  */
 const chooseQuiz = (index, givenAns) => {
   const isExist = answers.find((ans) => ans.id === quizData[index].id);
   if (isExist) {
